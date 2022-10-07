@@ -1,0 +1,33 @@
+<p>This is from family.component.html</p>
+
+
+<!--Interpolation syntax - {{ }} -->
+<p>Welcome to {{familyNaME}} Family</p> 
+
+<!--Property binding syntax - {{ }} -->
+<div [style.color]="color">Our Family's Favorite color is {{color}} </div> 
+
+
+<!-- Property binding    -->
+<p id="total" [innerText]="total"></p>
+
+<!-- The above piece of code is similar as below in js -->
+<!-- document.getElementById("total").innerText = total; -->
+
+<!-- Event Binding -->
+<button (click)="fun();">Click to watch magic</button>
+
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+    </tr>
+    <tr *ngFor="let detail of details">
+        <td>{{detail.name}}</td>
+        <td>{{detail.age}}</td>
+        <td>{{detail.gender}}</td>
+    </tr>
+
+</table>
