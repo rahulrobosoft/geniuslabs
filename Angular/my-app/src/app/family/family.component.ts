@@ -15,16 +15,19 @@ export class FamilyComponent implements OnInit {
   details: MembersDetails[] = [
     {
       name: "Rahul",
+      dob:new Date('17-Jul-2000'),
       age: 22,
       gender: "M",
     },
     {
       name : "Satyanarayana",
+      dob:new Date('22-Jul-1963'),
       age : 59,
       gender : "M",
     },
     {
       name : "Anitha",
+      dob:new Date('15-Aug-1970'),
       age : 53,
       gender : "F"
     },

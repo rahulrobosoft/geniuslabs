@@ -1,0 +1,21 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+ul{
+    padding:10px;
+    padding-top: 300px;
+    background-color: #5d7e9d;
+    width:fit-content;
+    height: 95vh;
+    text-align: left;
+}
+
+li{
+    list-style: none;
+    line-height: 2em;
+    color:white;
+    cursor: pointer;
+}

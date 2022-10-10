@@ -20,14 +20,27 @@
 
 <table>
     <tr>
+        <th>Even/Odd</th>
+        <th>Index</th>
         <th>Name</th>
+        <th>DOB</th>
         <th>Age</th>
         <th>Gender</th>
     </tr>
-    <tr *ngFor="let detail of details">
-        <td>{{detail.name}}</td>
+    <tr *ngFor="let detail of details | slice : 0:2; let i = index; let e = even; let o = odd;">
+        <td>{{e? 'Even':'Odd'}}</td>
+        <td>{{i}}</td>
+        <td>{{detail.name | titlecase}}</td>
+        <td>{{detail.dob | date}}</td>
         <td>{{detail.age}}</td>
         <td>{{detail.gender}}</td>
     </tr>
 
 </table>
+
+<br>
+
+<div>
+    <h3>JSON Pipe</h3>
+    {{details | json}} 
+</div>
