@@ -14,7 +14,8 @@ table{
 
 th{
     background-color: #5D7E9D;
-    color:white
+    color:white;
+    border:1px solid white;
 }
 
 table tr th:first-child{
@@ -23,4 +24,20 @@ table tr th:first-child{
 
 #flex{
     display: flex;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } 
+
+
+button{
+    border:none;
+    padding:10px;
+    background-color: #5D7E9D;
+    border-radius: 5px;
+    color:white;
+    width:150px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #194775;
 }
