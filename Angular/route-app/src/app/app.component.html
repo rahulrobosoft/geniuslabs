@@ -2,12 +2,12 @@
 <div id="flex" >
 
 
-  <ul [hidden]="hide" setBgBlue>
-   <button id="close" (click)="close();">Click me to hide this sidenav and refersh me to bring me back (This is to represent EVENT BINDING)</button>
-    <li [routerLink]="'family-details'">Family Details</li>
-    <li [routerLink]="'family-members'">Family Member Names</li>
-    <li [routerLink]="'family-age'">Family Member Ages</li>
-    <li [routerLink]="'family-dob'">Family Member DOBs</li>
+  <ul [hidden]="hide" setBgBlue >
+   <button id="close" appHover (click)="close();">Click me to hide this sidenav and refersh me to bring me back (This is to represent EVENT BINDING)</button>
+    <li appHover [routerLink]="'family-details'">Family Details</li>
+    <li appHover [routerLink]="'family-members'">Family Member Names</li>
+    <li appHover [routerLink]="'family-age'">Family Member Ages</li>
+    <li appHover [routerLink]="'family-dob'">Family Member DOBs</li>
   </ul>
 
   <!-- <app-navigation></app-navigation> -->
