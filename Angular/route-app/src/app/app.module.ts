@@ -17,6 +17,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { SelectedSlnoComponent } from './selected-slno/selected-slno.component';
+import { setBgDirective } from './CustomDirective/setBg.directive';
+import { HoverDirective } from './CustomDirective/hover.directive';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { SelectedSlnoComponent } from './selected-slno/selected-slno.component';
     NavigationComponent,
     NotFoundComponent,
     SelectedSlnoComponent,
+    setBgDirective,
+    HoverDirective,
 
   ],
   imports: [
@@ -39,7 +43,7 @@ import { SelectedSlnoComponent } from './selected-slno/selected-slno.component';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

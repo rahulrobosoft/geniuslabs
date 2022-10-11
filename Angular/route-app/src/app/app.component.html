@@ -1,6 +1,9 @@
 
-<div id="flex">
-<ul>
+<div id="flex" >
+
+
+  <ul [hidden]="hide" setBgBlue>
+   <button id="close" (click)="close();">Click me to hide this sidenav and refersh me to bring me back (This is to represent EVENT BINDING)</button>
     <li [routerLink]="'family-details'">Family Details</li>
     <li [routerLink]="'family-members'">Family Member Names</li>
     <li [routerLink]="'family-age'">Family Member Ages</li>
