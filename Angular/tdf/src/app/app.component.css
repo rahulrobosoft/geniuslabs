@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+h2{
+    font-weight: 500;
+}
+form{
+    margin: auto;
+    margin-top: 200px;
+    max-width: 400px;
+    padding:30px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+form div{
+    padding:5px;
+}
+form div:first-child{
+    padding-bottom: 10px;
+}
+
+form label{
+    /* display: block; */
+    padding-bottom:8px;
+}
+form input{
+    
+    margin-top: 5px;
+    padding:8px 10px;
+    /* border:none; */
+    border:1px solid #ececec;
+    border-radius: 5px;
+    width: 100%;
+}
+
+span{
+    color:red;
+}
+#btn{
+    padding:8px 10px;
+    width:100%;
+    background-color: #5D7E9D;
+    border:none;
+    color:white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: #194775;
+    
+}
+
+input.ng-invalid.ng-touched{
+    border: 1px solid red; 
+}
+sup{
+    color:red;
+}
+#error{
+    color:red;
+}
+
+#greyText{
+    color:grey;
+    font-size: 12px;
+}
+
+#radio input{
+    display: inline;
+    /* padding:-10px; */
+    width:10%;
+}
+
+#radio label{
+    color:black;
+}
+
+#op{
+    color:grey;
+    font-size: 12px;
+}

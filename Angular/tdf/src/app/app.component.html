@@ -1,0 +1,43 @@
+<form (ngSubmit)="onSubmit(myForm);" #myForm="ngForm" >
+
+  <div>
+    <h2>Login into your <span>Dream</span></h2>
+  </div>
+
+  <div>
+    <label for="Email">Enter Your Email<sup> *</sup></label>
+    <input type="text" value="" placeholder="rahul.y@gmail.com" name="email" ngModel required email [(ngModel)]="mail" #email="ngModel" >
+    <div>
+      <small id="error" *ngIf="(email.invalid && email.touched)">Email is required field</small>
+      <small id="greyText" *ngIf="email.invalid && email.untouched && mail">You entered {{mail}}</small>
+    </div>
+  </div>
+
+  <div>
+    <label for="Password">Enter Your Password<sup> *</sup></label>
+    <input type="password" value="" name="password" ngModel required #pass="ngModel">
+    <small id="error" *ngIf="(pass.invalid && pass.touched)  ">Password is required field</small><br>
+    <small id="greyText">Worry not! We will not disclose your password with anyone</small>
+  </div>
+
+
+  <div>
+
+    <label for="Like">How Likely do you like this TDF?<span id="op"><i> optional</i></span></label><br>
+    <span id="radio" *ngFor="let like of likes">
+      <input type="radio" name="like" id="{{like.id}}" value="{{like.value}}" [ngModel]="defaultLikes">
+      <label for="{{like.value }}">{{like.value}}</label>
+    </span>
+
+  </div>
+
+  <div >
+    <input *ngIf ="(myForm.valid)" type="submit" value="Submit" id="btn" >  
+  </div>
+
+</form>
+
+
+
+
+<!-- [disabled]="!myForm.valid" -->
