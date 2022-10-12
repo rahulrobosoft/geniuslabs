@@ -9,17 +9,31 @@ import { NgForm } from '@angular/forms';
 export class AppComponent {
   title = 'tdf';
   mail:string = '';
-  defaultLikes ='Absolutely Yes'
+  defaultLikes ='Absolutely Yes';
+
+  @ViewChild('myForm')form!: NgForm;
 
   likes = [
     {id:1,value:'Absolutely Yes'},
     {id:2,value:'No'},
   ]
 
-  onSubmit(form:NgForm){
-   console.log(form);
-  }
+  onSubmit(){
+    console.log(this.form);
+    this.form.reset();
+   }
 
+  
+
+  setDefaultValues(){
+    this.form.setValue({
+      email:"rahul.y@gmail.com",
+      password:"@Kishore_17",
+      like:"Absolutely Yes",
+    })
+  }
+  
+ 
 
 
 }
