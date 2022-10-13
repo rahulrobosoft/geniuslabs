@@ -21,6 +21,7 @@ export class AppComponent {
   onSubmit(){
     console.log(this.form);
     this.form.reset();
+    alert('Thank you!');
    }
 
   

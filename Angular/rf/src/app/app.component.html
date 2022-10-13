@@ -1,0 +1,69 @@
+ 
+
+
+<div id="outer">
+
+ 
+  <div id="vl1"></div>
+ 
+
+<form [formGroup]="reactiveForm" (ngSubmit)="onSubmit();"  >
+
+
+    <div>
+      <h1>Find your <span>Match</span></h1>
+    </div>
+  
+    <div>
+      <label for="name">Enter your name</label>
+      <input type="text" value="" placeholder="Rahul Shetty" formControlName="name">
+    </div>
+  
+    <div>
+      <label for="age">Enter your age</label>
+      <input type="number" value="" placeholder="22" formControlName="age">
+    </div>
+  
+    <div>
+      <label for="email">Enter your email</label>
+      <input type="text" placeholder="rahul.y@robosoftin.com" formControlName="email">
+      <div>
+        <small *ngIf="!reactiveForm.get('email').valid && reactiveForm.get('email').touched">This email is not valid</small>
+      </div>
+    </div>
+  
+    <div>
+      <label for="phn">Enter your mobile number</label>
+      <input type="text" value="" placeholder="9008297113" formControlName="mobile">
+    </div>
+  
+    <div id="gender">
+  
+      <label for="gender">Gender</label><br>
+      <input type="radio" id="" value="Male" formControlName="gender">
+      <label for="gender">Male</label>
+      <input type="radio" id="" value="Female" formControlName="gender">
+      <label for="gender">Female</label>
+      <input type="radio" id="" value="Other" formControlName="gender">
+      <label for="gender">Other</label>
+    </div>
+  
+    <div>
+      <label for="qualities">Enter Qualities that you wish for</label>
+      <div formArrayName="qualities">
+        <ng-container *ngFor="let quality of reactiveForm.get('qualities')['controls'];index as i">
+          <input type="text" value="" placeholder="Fair,Job Security..." formControlName="{{i}}">
+        </ng-container>
+        <button id="sub" type="button"  (click)="addQ()" >+ Add quality</button>
+      </div>
+    </div>
+
+    <div>
+      <input type="submit" value="Match" id="sub">
+    </div>
+ 
+ 
+</form>
+</div>
+
+

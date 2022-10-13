@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* color: white; */
+    color:black;
+}
+
+#outer {
+    width: 80%;
+    height: 90vh;
+    background-color: #fff;
+    margin: 3% 10%;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background: url(../../virushka.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100%;
+    background-color: #c9a2b6;
+    border-radius: 5px;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+h2 span{
+    /* color:#c9a2b6; */
+    /* color:#445a39; */
+    /* font-weight:550 ; */
+}
+
+form {
+    position: absolute;
+    width: 350px;
+    background-color: #fff;
+ 
+    box-shadow: rgba(0, 0, 0, 0.5) 2.4px 2.4px 3.2px;
+    padding: 30px;
+    top: 6%;
+    left: 0%;
+    border-radius: 0px 5px 5px 0px;
+    /* backdrop-filter: blur(10px); */
+    /* background: rgba(0, 0, 0, 0); */
+   
+
+}
+
+#sub{
+    color:black;
+    background-color: #c9a2b6;
+    border:1px solid #fff;
+    transition: 0.7s;
+    width:50%;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding:5px;
+}
+
+#sub:hover{
+    background-color: #f56bb2;
+    width:75%;
+}
+
+#flex{
+    display: inline;
+}
+
+/* #vl1{
+    width:4px;
+    height:100%;
+    background-color: white;
+    margin-left: 20px;
+
+} */
+
+form div {
+    padding: 6px 0px;
+}
+
+form #gender label {
+    display: inline;
+    width: 10%;
+    padding: 5px;
+}
+
+form input{
+    padding:5px;
+    border-radius: 5px;
+    border:1px solid white;
+    width: 100%;
+    margin-top: 3px;
+    color:black;
+    border:1px solid #ececec;
+}
+
+/* 
+#gender label:first-child{
+    padding:0px;
+} */
+
+
+#gender input {
+    padding: 5px;
+    width:10%;
+
+}
+
+input.ng-invalid.ng-touched{
+    border:1px solid red;
+}
+
+small{
+    color:Red;
+}
