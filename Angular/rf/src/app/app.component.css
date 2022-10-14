@@ -26,31 +26,31 @@ h1 {
     font-weight: 500;
 }
 
-h2 span{
-    /* color:#c9a2b6; */
+h1 span{
+    color:#c9a2b6;
     /* color:#445a39; */
-    /* font-weight:550 ; */
+    /* font-weight:600 ; */
+
 }
 
 form {
     position: absolute;
     width: 350px;
     background-color: #fff;
- 
-    box-shadow: rgba(0, 0, 0, 0.5) 2.4px 2.4px 3.2px;
-    padding: 30px;
-    top: 6%;
-    left: 0%;
-    border-radius: 0px 5px 5px 0px;
-    /* backdrop-filter: blur(10px); */
-    /* background: rgba(0, 0, 0, 0); */
-   
+     padding: 30px;
+    left: 77px;
+    overflow-y: auto;
+    height: 100%;
 
+}
+
+form::-webkit-scrollbar{
+    display: none;
 }
 
 #sub{
     color:black;
-    background-color: #c9a2b6;
+    /* background-color: #c9a2b6; */
     border:1px solid #fff;
     transition: 0.7s;
     width:50%;
@@ -60,22 +60,12 @@ form {
     padding:5px;
 }
 
-#sub:hover{
-    background-color: #f56bb2;
-    width:75%;
-}
+
 
 #flex{
     display: inline;
 }
 
-/* #vl1{
-    width:4px;
-    height:100%;
-    background-color: white;
-    margin-left: 20px;
-
-} */
 
 form div {
     padding: 6px 0px;
@@ -97,11 +87,6 @@ form input{
     border:1px solid #ececec;
 }
 
-/* 
-#gender label:first-child{
-    padding:0px;
-} */
-
 
 #gender input {
     padding: 5px;
@@ -116,3 +101,5 @@ input.ng-invalid.ng-touched{
 small{
     color:Red;
 }
+
+
