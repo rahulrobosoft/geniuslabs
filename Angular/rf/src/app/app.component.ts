@@ -34,9 +34,10 @@ export class AppComponent implements OnInit {
   onSubmit() {
     console.log(this.reactiveForm);
     // console.log(this.reactiveForm.qualities);
-    this.reactiveForm.reset();
     console.log(<FormArray>this.reactiveForm.get('age').value);
     alert('Thank you! You will find your match soon');
+    // this.reactiveForm.reset();
+
 
   }
 

@@ -25,7 +25,7 @@
   
     <div>
       <label for="age">Enter your age</label>
-      <input type="number" value="" placeholder="Enter your age" formControlName="age" age="age">
+      <input type="number"  placeholder="Enter your age" formControlName="age" name="age">
       <div>
         <small *ngIf="reactiveForm.get('age').errors?.['required'] && reactiveForm.get('age').touched">Age is required Field</small>
         <small *ngIf="reactiveForm.get('age').errors?.['min']">Sorry Kid! We cannot find a match for you.</small>
