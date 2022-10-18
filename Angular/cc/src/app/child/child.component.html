@@ -1,0 +1,10 @@
+<div class="comp">
+
+    <h1>I am Child-1 component</h1>
+    <p [innerText]="parentData"></p>
+    <p [innerText]="childData"></p>
+    <div>
+        <button (click)="sendDataToParent();">Send Data to Parent</button>
+        <button (click)="sendDataToChild2();">Send Data to Child-2</button>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+.comp {
+    /* width:20%; */
+    height: 350px;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.comp-1{
+    height:710px;
+    background: url('https://cdn.vectorstock.com/i/1000x1000/75/39/happy-father-with-daughter-and-son-vector-10237539.webp');
+}
+
+button {
+    padding: 15px;
+    background-color: red;
+    border: none;
+    color: white;
+    width:100%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 8px;
+
+}
+button:hover{
+    background-color: #8e2323;
+}
+p{
+    font-size:18px;
+}
+
+.flex {
+    margin-top: 30px;
+    display: flex;
+    justify-content:space-evenly;
+    
+}
+
+#block{
+    display: block;
+}
+

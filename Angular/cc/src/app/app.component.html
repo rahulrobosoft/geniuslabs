@@ -1,0 +1,22 @@
+<div class="flex">
+  <div class="comp comp-1">
+
+    <h1>I am Parent component</h1>
+    <p>{{messageFromChildren}}</p>
+    <!-- <p>{{message1}}</p> -->
+    <div class="btn-blk">
+      <button (click)="sendDataToChild1();">Send Data to Child-1</button><br>
+      <button (click)="sendDataToChild2();">Send Data to Child-2</button>
+    </div>
+
+
+  </div>
+  <div id="block">
+    <app-child (childEventForParent)="messageFromChildren=$event" (childEventForChild)="messageFromChild1=$event" [parentData]="nameToChild1" [childData]="msgFromChild2">
+    </app-child>
+    <app-child2 (childEventforParent)="messageFromChildren=$event" (childEventforChild)="msgFromChild2=$event" [parentData]="nameToChild2" [childData]="messageFromChild1">
+    </app-child2>
+
+
+  </div>
+</div>
