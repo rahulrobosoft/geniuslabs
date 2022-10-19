@@ -4,9 +4,13 @@
     <h1>I am Child-2 component</h1>
     <p [innerText]="parentData"></p>
     <p [innerText]="childData"></p>
+    <p [innerText]="messageFromChild1"></p>
+    <p [innerText]="groupMessage1"></p>
+
     <div>
         <button (click)="sendDataToParent();">Send Data to parent</button>
-        <button (click)="sendDataToChild1();">Send Data to Child-1</button>
+        <button (click)="sendDataToChild2();">Send Data to Child-1 Using Parent</button>
+        <button (click)="sendDataToChild1WithoutParent();">Send Data to Child-1 Without Parent</button>
     </div>
    
    

@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChildComponent } from './child/child.component';
 import { Child2Component } from './child2/child2.component';
+import { IntermediateService } from './intermediate.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { Child2Component } from './child2/child2.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [IntermediateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

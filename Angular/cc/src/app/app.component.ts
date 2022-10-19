@@ -10,6 +10,7 @@ export class AppComponent {
 
   public nameToChild1 = "";
   public nameToChild2 = "";
+  public nameToChildren:string='';
   public messageFromChildren:string='';
   public message1:string='';
   public messageFromChild1:string="";
@@ -24,5 +25,8 @@ export class AppComponent {
     this.nameToChild2="Hello Shetty";
   }
 
+  sendDataToChildren(message:string){
+    this.nameToChildren=message;
+  }
  
 }
