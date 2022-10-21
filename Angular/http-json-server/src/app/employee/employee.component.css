@@ -1,0 +1,64 @@
+
+td,th{
+    padding:15px;
+    border: 1px solid black;
+}
+
+table{
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    text-align: left;
+    height:200px;
+    width: 100%;
+}
+.container{
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 5px;
+}
+
+input{
+    padding: 10px;
+}
+
+button{
+    border: none;
+    padding: 15px;
+    margin-left: 10px;
+    background-color: #ececec;
+    cursor: pointer;
+
+}
+
+#del{
+    background-color: red;
+    color:white;
+    border-radius: 5px;
+
+}
+
+#edit{
+    background-color: #0078d4;
+    color:white;
+    border-radius: 5px;
+}
+#add{
+    background-color: #0078d4;
+    color:white;
+    border-radius: 5px;
+    width:47%;
+}
+
+#upd{
+    background-color: #78924e;
+    color:white;
+    border-radius: 5px;
+    width:47%;
+}
+
+p{
+    font-size: 20px;
+    font-weight: 500;
+}
