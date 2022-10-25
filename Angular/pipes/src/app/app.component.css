@@ -1,0 +1,23 @@
+table{
+    border-collapse: collapse;
+    padding:25px;
+
+
+}
+
+tr,td,th{
+    padding: 10px;
+    border:1px solid #ececec;
+}
+
+div input,button{
+    margin: 10px 10px 0px 0px;
+}
+
+button{
+    background-color: rgb(255, 0, 0);
+    border: none;
+    padding: 3px;
+    color: white;
+    border-radius: 5px;
+}

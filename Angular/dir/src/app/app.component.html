@@ -1,0 +1,23 @@
+
+<div>
+  <p [ngStyle]="{'background-color':color,'padding':'10px'}" *ngIf="visible; else second_p">Hello!Am i visible? If Yes, ngIf directive is letting me visible</p>
+
+</div>
+<div>
+  <button ngClass="btn"  (click)="fun();" [innerHTML]="ih"></button>
+
+</div>
+<div>
+
+  <ng-template appHighlight #second_p >
+   <p appHighlight>
+     Hello I'm else part
+   </p> 
+   </ng-template>
+ 
+</div>
+
+<p>Topics covered here</p>
+<ul *ngFor="let topic of topics">
+  <li>{{topic}}</li>
+</ul>
