@@ -2,12 +2,13 @@
     letter-spacing: 0.4px;
 }
 
-.btn{
+.btn1{
     padding: 10px;
     border:1px solid black;
     background-color: #fff;
     cursor: pointer;
 }
+
 
 ul{
     list-style-type:circle;

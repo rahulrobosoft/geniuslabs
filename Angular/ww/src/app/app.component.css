@@ -1,0 +1,23 @@
+
+
+.bgRed{
+    background-color: red;
+    height: 100vh;
+    padding: 10px;
+}
+
+.bgBlue{
+    background-color: blue;
+    height: 100vh;
+    padding: 10px;
+}
+
+.bgRed button, .bgBlue button{
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    border:none;
+    background-color: #fff;
+    cursor: pointer;
+}
+

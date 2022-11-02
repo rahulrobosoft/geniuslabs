@@ -11,7 +11,8 @@ export class AppComponent {
   visible=true;
   color='#ececec';
   color1='#fff';
-  btn='btn';
+  btn1='btn1';
+
   ih="Make it invisible and make else part visible";
 
   topics = ['*ngIf-else','*ngFor','[ngStyle]','[ngClass]','Custom Attribute Directive','HostListener','HostBinding']
